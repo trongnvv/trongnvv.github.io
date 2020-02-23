@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+    <style>
+        html {
+            background: #00AC64 url('http://media3.giphy.com/media/fJ1eCBjmMoEvu/giphy.gif');
+            padding: 40px 20px;
+        }
+    </style>
 </head>
 
 <body>
+    <div style="height: 700px;width: 100%;text-align: center;">
+        <img src="lover.jpg" style="height: 100%;" alt="" srcset="">
+    </div>
+
     <audio hidden id="audio" controls autoplay preload="auto">
         <source src="lover.mp3" type="audio/mpeg" />
     </audio>
+    <script>
+        var audio = document.getElementById("audio");
+        document.body.addEventListener("click", function () {
+            audio.play()
+        })
+    </script>
 </body>
-<script>
-    var audio = document.getElementById("audio");
-    document.body.addEventListener("click", function () {
-        audio.play()
-    })
-</script>
 
 </html>
