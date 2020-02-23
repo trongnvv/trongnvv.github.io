@@ -116,6 +116,7 @@ body{
   width: 340px;
   height: 180px;
   border:10px solid #34485E;
+  background: yellow;
   animation: color-change 6s linear .2s infinite;
   margin: 25px auto 0;
   text-align: center;
@@ -123,4 +124,22 @@ body{
   border-radius: 8px 8px 0 0;
   position: relative;
 
+}
+body:after{
+  content: 'LOAN À, LÀM NGƯỜI YÊU ANH NHÉ !' ;
+  font-weight: 800;
+  font-size: 22px;
+  display: block;
+  color:#fff;
+  margin-top: 50px;
+}
+body:before{
+  content: '';
+  position: absolute;
+  height: 15px;
+  left: -50px;
+  right: -50px;
+  background: #D7D7D7;
+  bottom: -25px;
+  border-radius:0 0 10px 10px ;
 }

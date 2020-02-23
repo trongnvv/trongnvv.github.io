@@ -9,21 +9,22 @@
     <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
     <style>
         html {
-            background: #00AC64 url('http://media3.giphy.com/media/fJ1eCBjmMoEvu/giphy.gif');
-            padding: 40px 20px;
+            /* background: #00AC64 url('http://media3.giphy.com/media/fJ1eCBjmMoEvu/giphy.gif'); */
+            height: 100%;
         }
+
+        body {}
     </style>
 </head>
 
 <body>
-    <div style="height: 700px;width: 100%;text-align: center;">
-        <img src="lover.jpg" style="height: 100%;" alt="" srcset="">
-    </div>
+    <img src="lover.jpg" style="height: 100%; max-height: 700px;" alt="" srcset="">
 
     <audio hidden id="audio" controls autoplay preload="auto">
         <source src="lover.mp3" type="audio/mpeg" />
     </audio>
     <script>
+
         var audio = document.getElementById("audio");
         document.body.addEventListener("click", function () {
             audio.play()
